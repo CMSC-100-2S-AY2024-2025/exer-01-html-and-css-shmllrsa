@@ -1,0 +1,87 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8FAFC;
+    border-bottom: 3px solid #872341;
+    padding: 40px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: -5px;
+    left: 15px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    text-align: center;
+}
+
+.character-illustration img {
+    width: 600px;
+}
+
+.text-section {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.skills {
+    font-size: 18px;
+    color: #872341;
+    text-align: center;
+    margin-top: -90px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    margin: 10px;
+    margin-top: -10px;
+}
+
+.prevproject-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.previous-project img {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-section img {
+    display: inline;
+    width: 500px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 5px;
+    margin-bottom: 30px;
+}
