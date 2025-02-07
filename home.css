@@ -25,6 +25,7 @@ header {
     justify-content: center;
     padding: 150px;
     text-align: center;
+    margin-top: -60px;
 }
 
 .character-illustration img {
@@ -40,7 +41,7 @@ header {
     font-size: 18px;
     color: #872341;
     text-align: center;
-    margin-top: -90px;
+    margin-top: -100px;
 }
 
 .social-icons {
@@ -71,17 +72,128 @@ header {
 }
 
 .projects-section {
-    display: flex;
-    flex-direction: column;
+    display: inline-table;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
     justify-content: center;
     align-items: center;
+    padding: 40px;
+    text-align: center;
+    margin-top: -40px;
 }
 
 .projects-section img {
-    display: inline;
+    border: 8px solid #872341;
+    background-color: white;
+    padding: 10px;
+}
+
+
+.projects-section img:nth-child(-n+3) {
+    width: 270px;
+    height: 270px;
+}
+
+
+.projects-section img:nth-child(n+4) {
     width: 500px;
-    height: 150px;
-    border: 2px solid black;
-    padding: 5px;
-    margin-bottom: 30px;
+    height: 300px;
+}
+
+.text1-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.text1-project img {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh; 
+    margin-top: -220px;
+}
+
+.skills-section img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.another-skills-section {
+    text-align: center;
+    margin-top: -220px;
+}
+
+.show-more-link {
+    text-decoration: none; 
+    color: #872341; 
+}
+
+.show-more-link h3 {
+    margin: 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.show-more-link:hover {
+    text-decoration: underline;
+}
+
+.text2-project img {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+
+.aboutme-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 40px;
+    gap: 40px; 
+    margin-top: -10px;
+}
+
+.shamel img {
+    width: 600px; 
+    height: auto;
+}
+
+.education-section {
+    text-align: left;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.education-section img {
+    width: 500px;
+    height: auto;
+    margin-bottom: -90px;
+    margin-top: -250px;
+}
+
+.info {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #872341;
+    text-align: justify; 
+    margin-top: -90px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }
