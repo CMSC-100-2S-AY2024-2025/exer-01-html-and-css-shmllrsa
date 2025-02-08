@@ -1,7 +1,9 @@
+/* custom cursor, reference: https://www.svgbackgrounds.com/elements/custom-css-cursors/#:~:text=Adding%20a%20custom%20cursor%20to,%2C%20and%2For%20cursor%20size. */
 body {
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="%23872341" stroke="%23870F71" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'), auto;
 }
 
+/* header design (logo contains here) */
 header {
     display: flex;
     justify-content: space-between;
@@ -12,17 +14,20 @@ header {
     position: relative;
 }
 
+/* logo layout positioned in the left upper side */
 .logo {
     position: absolute;
     top: -5px;
     left: 15px;
 }
 
+/* logo size image */
 .logo img {
     width: 80px;
     height: auto;
 }
 
+/* layout for character illustration, name, mini intro and social media */
 .hero-section {
     display: flex;
     align-items: center;
@@ -32,15 +37,18 @@ header {
     margin-top: -60px;
 }
 
+/* character illustration size image */
 .character-illustration img {
     width: 600px;
 }
 
+/* name layout */
 .text-section {
     margin-left: 10px;
     text-align: left;
 }
 
+/* mini intro layout */
 .skills {
     font-size: 18px;
     color: #872341;
@@ -48,18 +56,21 @@ header {
     margin-top: -100px;
 }
 
+/* layout for the social media icons*/
 .social-icons {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
+/* positioning and resizing of social media icons */
 .social-icons img {
     width: 50px;
     margin: 10px;
     margin-top: -10px;
 }
 
+/* list of previous project contains here */
 .prevproject-section {
     display: flex;
     align-items: center;
@@ -68,6 +79,7 @@ header {
     text-align: center;
 }
 
+/* previous project text */
 .previous-project img {
     width: 500px;
     display: block;
@@ -75,6 +87,7 @@ header {
     margin-right: auto;
 }
 
+/* layout for previous projects */
 .projects-section {
     display: block;
     grid-template-columns: repeat(3, 1fr); 
@@ -86,24 +99,28 @@ header {
     margin-top: -40px;
 }
 
+/* resizing and repositioning of project images */
 .projects-section img {
     border: 8px solid #872341;
     background-color: white;
     padding: 10px;
 }
 
-
+/* layout for upper images for previous projects */
+/* reference for positioning: https://www.shecodes.io/athena/153222-what-does-nth-child-mean-understanding-the-css-pseudo-class#:~:text=The%20%3Anth%2Dchild()%20selector%20is%20a%20CSS%20pseudo%2D,elements%20by%20using%20a%20formula. */
 .projects-section img:nth-child(-n+3) {
     width: 25vw;
     height: 25vw;
 }
 
-
+/* layout for lower images for previous projects */
+/* reference for positioning: https://www.shecodes.io/athena/153222-what-does-nth-child-mean-understanding-the-css-pseudo-class#:~:text=The%20%3Anth%2Dchild()%20selector%20is%20a%20CSS%20pseudo%2D,elements%20by%20using%20a%20formula. */
 .projects-section img:nth-child(n+4) {
     width: 35vw;
     height: 20vw;
 }
 
+/* skills contains here */
 .text1-section {
     display: flex;
     align-items: center;
@@ -112,6 +129,7 @@ header {
     text-align: center;
 }
 
+/* positioning of skill text image */
 .text1-project img {
     width: 500px;
     display: block;
@@ -120,40 +138,49 @@ header {
     margin-top: 50px;
 }
 
+/* layout for skills image */
 .skills-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120vh; 
-    margin-top: -220px;
+    margin-top: -250px;
 }
 
+/* resizing of skills images */
 .skills-section img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
 
+/* show more section */
+/* got confused on where to put it (i put it at the skills section when it should be at 
+the previous projects section */
 .another-skills-section {
     text-align: center;
     margin-top: 10px;
 }
 
+/* show more layout */
 .show-more-link {
     text-decoration: none; 
     color: #872341; 
 }
 
+/* text for show more */
 .show-more-link h3 {
     margin: 0;
     cursor: pointer;
     font-size: 1.2rem;
 }
 
+/* animation when click */
 .show-more-link:hover {
     text-decoration: underline;
 }
 
+/* autobiography text */
 .text2-project img {
     width: 500px;
     display: block;
@@ -162,7 +189,7 @@ header {
     margin-top: -120px;
 }
 
-
+/* contains my picture, educ, name text, and mini autobiography*/
 .aboutme-section {
     display: flex;
     align-items: center;
@@ -173,11 +200,13 @@ header {
     margin-top: -10px;
 }
 
+/* layout for image */
 .shamel img {
     width: 600px; 
     height: auto;
 }
 
+/* education layout */
 .education-section {
     text-align: left;
     display: flex;
@@ -185,6 +214,7 @@ header {
     align-items: center; 
 }
 
+/* repositioning and resizing of education image */
 .education-section img {
     width: 500px;
     height: auto;
@@ -192,6 +222,7 @@ header {
     margin-top: -250px;
 }
 
+/* autobiography layout */
 .info {
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
