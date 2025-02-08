@@ -72,7 +72,7 @@ header {
 }
 
 .projects-section {
-    display: inline-table;
+    display: block;
     grid-template-columns: repeat(3, 1fr); 
     gap: 10px; 
     justify-content: center;
@@ -90,8 +90,8 @@ header {
 
 
 .projects-section img:nth-child(-n+3) {
-    width: 270px;
-    height: 270px;
+    width: 25vw;
+    height: 25vw;
 }
 
 
